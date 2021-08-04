@@ -5,7 +5,7 @@ const MainHeader = () => {
     <header>
       <nav>
         <a href="/">
-          <img src="./moh3.gif" alt="searchcode small logo" height="30"></img>
+          <img src="../moh3.gif" alt="searchcode small logo" height="30"></img>
         </a>
         <ul>
           <li>

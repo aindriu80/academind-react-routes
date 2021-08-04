@@ -269,6 +269,10 @@ a {
   text-decoration: none;
 }
 
+a.active {
+  color: var(--color-secondary);
+}
+
 a:hover {
   filter: brightness(var(--hover-brightness));
   text-decoration: underline;

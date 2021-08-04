@@ -1,14 +1,20 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
+import classes from '../mvp.css'
 const MainHeader = () => {
   return (
     <header>
       <nav>
+        <a href="/">
+          <img src="./moh3.gif" alt="searchcode small logo" height="30"></img>
+        </a>
         <ul>
           <li>
-            <Link to="/welcome">Welcome</Link>
+            <NavLink activeClassName={classes.active} to="/welcome">
+              Welcome
+            </NavLink>
           </li>
           <li>
-            <Link to="/products">Products</Link>
+            <NavLink to="/products">Products</NavLink>
           </li>
         </ul>
       </nav>

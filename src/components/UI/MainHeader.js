@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import classes from '../mvp.css'
+import classes from '../../mvp.css'
 const MainHeader = () => {
   return (
     <header>
@@ -7,14 +7,15 @@ const MainHeader = () => {
         <a href="/">
           <img src="../moh3.gif" alt="searchcode small logo" height="30"></img>
         </a>
+        <h2>Great Quotes</h2>
         <ul>
           <li>
-            <NavLink activeClassName={classes.active} to="/welcome">
-              Welcome
+            <NavLink activeClassName={classes.active} to="/quotes">
+              All Quotes
             </NavLink>
           </li>
           <li>
-            <NavLink to="/products">Products</NavLink>
+            <NavLink to="/new-quote">Add a Quote</NavLink>
           </li>
         </ul>
       </nav>

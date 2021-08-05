@@ -5,10 +5,10 @@ const ProductDetail = () => {
   console.log(params.productId)
 
   return (
-    <sectionY>
+    <section>
       <h1>Product Detail</h1>
       <h2>{params.productId}</h2>
-    </sectionY>
+    </section>
   )
 }
 

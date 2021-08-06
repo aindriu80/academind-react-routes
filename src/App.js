@@ -20,7 +20,7 @@ function App() {
           <AllQuotes />
         </Route>
 
-        <Route path="/quotes/:quoteId" exact>
+        <Route path="/quotes/:quoteId">
           <QuoteDetail />
         </Route>
 

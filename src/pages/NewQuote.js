@@ -1,4 +1,8 @@
 const NewQuote = () => {
-  return <h1>New Quote</h1>
+  return (
+    <section>
+      <h1>New Quote</h1>
+    </section>
+  )
 }
 export default NewQuote

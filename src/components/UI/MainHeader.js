@@ -1,11 +1,15 @@
 import { NavLink } from 'react-router-dom'
 import classes from '../../mvp.css'
+import '../../mvp.css'
 const MainHeader = () => {
   return (
     <header>
       <nav>
         <a href="/">
-          <img src="../moh3.gif" alt="searchcode small logo" height="30"></img>
+          <img
+            src="../../moh3.gif"
+            alt="searchcode small logo"
+            height="30"></img>
         </a>
         <h2>Great Quotes</h2>
         <ul>

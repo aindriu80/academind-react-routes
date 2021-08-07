@@ -8,10 +8,13 @@ import AllQuotes from './pages/AllQuotes'
 import QuoteDetail from './pages/QuoteDetail'
 import NewQuote from './pages/NewQuote'
 
+import Layout from './components/layout/Layout'
+
 function App() {
   return (
     <>
       <MainHeader />
+      {/* <Layout> */}
       <Switch>
         <Route path="/" exact>
           <Redirect to="/quotes" />
@@ -28,6 +31,7 @@ function App() {
           <NewQuote />
         </Route>
       </Switch>
+      {/* </Layout> */}
     </>
   )
 }

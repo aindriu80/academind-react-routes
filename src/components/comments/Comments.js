@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import classes from './Comments.module.css'
+// import classes from './Comments.module.css'
 import NewCommentForm from './NewCommentForm'
 
 const Comments = () => {
@@ -11,15 +11,17 @@ const Comments = () => {
   }
 
   return (
-    <section className={classes.comments}>
-      <h2>User Comments</h2>
-      {!isAddingComment && (
-        <button className="btn" onClick={startAddCommentHandler}>
-          Add a Comment
-        </button>
-      )}
-      {isAddingComment && <NewCommentForm />}
-      <p>Comments...</p>
+    <section>
+      <form>
+        <h2>User Comments</h2>
+        {!isAddingComment && (
+          <button className="btn" onClick={startAddCommentHandler}>
+            Add a Comment
+          </button>
+        )}
+        {isAddingComment && <NewCommentForm />}
+        <p>Comments...</p>
+      </form>
     </section>
   )
 }

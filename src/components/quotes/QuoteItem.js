@@ -1,20 +1,23 @@
-// import classes from './QuoteItem.module.css';
+import { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 import '../../mvp.css'
 
 const QuoteItem = (props) => {
   return (
-    // <li className={classes.item}>
     <form>
-      <>
+      <Fragment>
         <figure>
           <blockquote>
             <p>{props.text}</p>
           </blockquote>
           <figcaption>{props.author}</figcaption>
         </figure>
-        {/* <a className="btn">View Fullscreen</a> */}
-        <button className="btn">View Fullscreen</button>
-      </>
+        <Link to={`/quotes/${props.id}`}>
+          <button className="btn" to={`/quotes/${props.id}`}>
+            View Fullscreen
+          </button>
+        </Link>
+      </Fragment>
     </form>
   )
 }

@@ -37,6 +37,9 @@
     --color-text-secondary: #aaa;
   }
 }
+li {
+  list-style: none;
+}
 
 /* Layout */
 article aside {
@@ -359,6 +362,7 @@ form {
   min-width: var(--width-card);
   padding: 1.5rem;
   text-align: var(--justify-normal);
+  margin: 1.5rem;
 }
 
 form header {

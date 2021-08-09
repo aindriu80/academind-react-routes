@@ -23,7 +23,7 @@
   --width-card-wide: 800px;
   --width-content: 1080px;
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --color: #0097fc;
@@ -36,7 +36,8 @@
     --color-text: #f7f7f7;
     --color-text-secondary: #aaa;
   }
-}
+} */
+
 li {
   list-style: none;
 }
@@ -140,7 +141,7 @@ nav {
   display: flex;
   font-weight: bold;
   justify-content: space-between;
-  margin-bottom: 7rem;
+  /* margin-bottom: 7rem; */
 }
 
 nav ul {

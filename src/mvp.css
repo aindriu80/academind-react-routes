@@ -371,6 +371,10 @@ form header {
   padding: 1.5rem 0;
 }
 
+inputz {
+  width: '500px';
+}
+
 input,
 label,
 select,

@@ -14,10 +14,14 @@
   height: 100%;
 }
 
-.four_zero_four_bg {
-  color: #fff;
-  background-image: url('./dribbble_1.gif');
+.lost {
+  margin-top: 30%;
+  color: #000;
+}
 
+.four_zero_four_bg {
+  color: #000;
+  background-image: url('./dribbble_1.gif');
   height: 100%;
 }
 

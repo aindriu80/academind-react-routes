@@ -18,7 +18,7 @@
   --justify-important: center;
   --justify-normal: left;
   --line-height: 1.5;
-  --width-card: 285px;
+  --width-card: 485px;
   --width-card-medium: 460px;
   --width-card-wide: 800px;
   --width-content: 1080px;
@@ -363,7 +363,7 @@ form {
   min-width: var(--width-card);
   padding: 1.5rem;
   text-align: var(--justify-normal);
-  margin: 1.5rem;
+  margin: 3.5rem;
 }
 
 form header {

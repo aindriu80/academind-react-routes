@@ -32,12 +32,12 @@ const QuoteForm = (props) => {
         {/* <div className={classes.control}> */}
         <div>
           <label htmlFor="author">Author</label>
-          <input type="text" id="author" ref={authorInputRef} />
+          <input type="text" width="500px" id="author" ref={authorInputRef} />
         </div>
         {/* <div className={classes.control}> */}
         <div>
           <label htmlFor="text">Text</label>
-          <textarea id="text" rows="5" ref={textInputRef}></textarea>
+          <textarea id="text" cols="60" rows="10" ref={textInputRef}></textarea>
         </div>
         {/* <div className={classes.actions}> */}
         <div>

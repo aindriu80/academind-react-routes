@@ -36,19 +36,21 @@ const QuoteList = (props) => {
     <>
       <section>
         {/* <ul className={classes.list}> */}
-        <ul>
-          <button onClick={changeSortingHandler}>
-            Sort {isSortingAscending ? 'Descending' : 'Ascending'}
-          </button>
-          {sortedQuotes.map((quote) => (
-            <QuoteItem
-              key={quote.id}
-              id={quote.id}
-              author={quote.author}
-              text={quote.text}
-            />
-          ))}
-        </ul>
+        <div className="centered">
+          <ul>
+            <button onClick={changeSortingHandler}>
+              Sort {isSortingAscending ? 'Descending' : 'Ascending'}
+            </button>
+            {sortedQuotes.map((quote) => (
+              <QuoteItem
+                key={quote.id}
+                id={quote.id}
+                author={quote.author}
+                text={quote.text}
+              />
+            ))}
+          </ul>
+        </div>
       </section>
     </>
   )

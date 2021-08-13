@@ -43,7 +43,7 @@ const QuoteForm = (props) => {
         <form onFocus={formFocusedHandler} onSubmit={submitFormHandler}>
           {props.isLoading && (
             // <div className={classes.loading}>
-            <div>
+            <div className="centered">
               <LoadingSpinner />
             </div>
           )}

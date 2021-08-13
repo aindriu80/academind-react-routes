@@ -42,7 +42,8 @@ const QuoteForm = (props) => {
       <Card>
         <form onFocus={formFocusedHandler} onSubmit={submitFormHandler}>
           {props.isLoading && (
-            <div className={classes.loading}>
+            // <div className={classes.loading}>
+            <div>
               <LoadingSpinner />
             </div>
           )}

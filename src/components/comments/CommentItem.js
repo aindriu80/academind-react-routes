@@ -2,7 +2,7 @@
 
 const CommentItem = (props) => {
   return (
-    <li className={item}>
+    <li className="item">
       <p>{props.text}</p>
     </li>
   )

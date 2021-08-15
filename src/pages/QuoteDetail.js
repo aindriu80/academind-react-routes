@@ -40,15 +40,15 @@ const QuoteDetail = () => {
   }
 
   if (loadedQuote.text) {
-    return <section>No quote found</section>
+    return <div>No quote found</div>
   }
 
   return (
-    <Fragment>
+    <>
       <section>
         <h1>Quote Detail</h1>
       </section>
-      <div className="centered focused">
+      <div className="centered">
         <HighlightedQuote text={loadedQuote.text} author={loadedQuote.author} />
         <Route path={match.path} exact>
           <div>
@@ -61,7 +61,8 @@ const QuoteDetail = () => {
       <Route path={`${match.path}/comments`}>
         <Comments />
       </Route>
-    </Fragment>
+      {/* </section> */}
+    </>
   )
 }
 export default QuoteDetail

@@ -1,45 +1,52 @@
-import './mvp.css'
-
+import React, { Suspense } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
+
+import './mvp.css'
 
 import MainHeader from './components/UI/MainHeader'
 
-import AllQuotes from './pages/AllQuotes'
-import QuoteDetail from './pages/QuoteDetail'
-import NewQuote from './pages/NewQuote'
-import NotFound from './pages/NotFound'
+import LoadingSpinner from './components/UI/LoadingSpinner'
 
-import Layout from './components/layout/Layout'
+const NewQuote = React.lazy(() => import('./pages/NewQuote'))
+const QuoteDetail = React.lazy(() => import('./pages/QuoteDetail'))
+const NotFound = React.lazy(() => import('./pages/NotFound'))
+const AllQuotes = React.lazy(() => import('./pages/AllQuotes'))
+const Layout = React.lazy(() => import('./components/layout/Layout'))
 
 function App() {
   return (
     <>
-      <MainHeader />
-      <Switch>
-        <Route path="/" exact>
-          <Redirect to="/quotes" />
-        </Route>
+      <Suspense
+        fallback={
+          <div className="centered">
+            <LoadingSpinner />
+          </div>
+        }>
+        <MainHeader />
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/quotes" />
+          </Route>
 
-        <Route path="/quotes" exact>
-          <AllQuotes />
-        </Route>
+          <Route path="/quotes" exact>
+            <AllQuotes />
+          </Route>
 
-        <Route path="/quotes/:quoteId">
-          <QuoteDetail />
-        </Route>
+          <Route path="/quotes/:quoteId">
+            <QuoteDetail />
+          </Route>
 
-        <Route path="/new-quote" exact>
-          <NewQuote />
-        </Route>
+          <Route path="/new-quote" exact>
+            <NewQuote />
+          </Route>
 
-        <Route path="*">
-          <NotFound />
-        </Route>
-      </Switch>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+      </Suspense>
     </>
   )
 }
 
 export default App
-
-1

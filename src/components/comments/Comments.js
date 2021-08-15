@@ -50,7 +50,7 @@ const Comments = () => {
 
   return (
     <section>
-      <form>
+      <div className="centered">
         <h2>User Comments</h2>
         {!isAddingComment && (
           <button className="btn" onClick={startAddCommentHandler}>
@@ -63,8 +63,8 @@ const Comments = () => {
             onAddedComment={addedCommentHandler}
           />
         )}
-      </form>
-      {comments}
+        {comments}
+      </div>
     </section>
   )
 }
